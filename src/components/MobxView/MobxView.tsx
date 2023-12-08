@@ -10,14 +10,14 @@ const MobxView = observer(() => {
       <div className="productContainer">
         <h2>Products</h2>
         <ProductComponent
-          key={`simple-prod-1`}
+          key={`mobx-prod-1`}
           id={1}
           name={"Gundam"}
           price={5}
           updateQty={cartStore.updateCartItems}
         />
         <ProductComponent
-          key={`simple-prod-2`}
+          key={`mobx-prod-2`}
           id={2}
           name={"Space Marine"}
           price={10}
