@@ -5,7 +5,8 @@ class CartStore {
   cartItems: CartItems[] = [];
 
   constructor() {
-    makeAutoObservable(this); //makeAutoObservable is like makeObservable on steroids
+    // autobind the this context, as to avoid context collisions
+    makeAutoObservable(this, {}, { autoBind: true }); //makeAutoObservable is like makeObservable on steroids
   }
 
   get totalPrice() {
@@ -20,7 +21,7 @@ class CartStore {
     return this.cartItems.length === 0;
   }
 
-  updateCartItems = (newItemInfo: CartItems) => {
+  updateCartItems(newItemInfo: CartItems) {
     const idxInState = this.cartItems.findIndex(
       (item) => item.id === newItemInfo.id
     );
@@ -34,7 +35,7 @@ class CartStore {
     } else {
       this.cartItems.push(newItemInfo);
     }
-  };
+  }
 }
 
 export const cartStore = new CartStore();
