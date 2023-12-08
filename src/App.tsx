@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import PropsView from "./components/PropsView/PropsView";
+import MobxView from "./components/MobxView/MobxView";
 
 function App() {
   const [isMobx, setIsMobx] = useState(true);
@@ -21,7 +22,7 @@ function App() {
           Mobx
         </button>
       </div>
-      {isMobx ? <PropsView /> : <h1>Complex view</h1>}
+      {isMobx ? <PropsView /> : <MobxView />}
     </div>
   );
 }
