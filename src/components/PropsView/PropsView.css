@@ -1,0 +1,13 @@
+.simpleView {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
