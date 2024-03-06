@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table Borders</title>
+    <link rel="stylesheet" href="table-borders.css" />
+  </head>
+
+  <body>
+    <h2>Add a border to a table:</h2>
+
+    <table>
+      <caption>
+        <!-- Used to provide a title or a brief description for the entire table -->
+        Table Borders
+      </caption>
+      <!-- <colgroup>
+        <col style="background-color: #a2c671" />
+        <col />
+      </colgroup> -->
+
+      <thead>
+        <!-- Header rows go here -->
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- Body rows go here -->
+        <tr>
+          <td>1</td>
+          <td>John Doe</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jane Smith</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Bob Johnson</td>
+          <td>22</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <!-- Footer rows go here -->
+        <tr>
+            <!-- merge or combine cells horizontally -->
+          <td colspan="2">Total</td>
+          <td>77</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

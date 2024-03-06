@@ -1,0 +1,21 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  width: 50%;
+  height: 50px;
+  font-size: 20px;
+  border-collapse: collapse;
+  /* border-collapse: separate;
+  border-spacing: 15px;*/
+} 
+
+/* only a border around the table */
+table {
+  border: 1px solid;
+}
