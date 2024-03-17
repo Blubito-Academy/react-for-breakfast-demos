@@ -1,8 +1,9 @@
 import { Product } from "./Product/Product";
+import styles from "./ProductSection.module.scss";
 
 export const ProductSection = () => {
   return (
-    <div>
+    <div className={styles.productSection}>
       <Product
         productName="A very old elf mage"
         productImgSrc="./public/frieren.png"
