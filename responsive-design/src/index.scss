@@ -6,7 +6,8 @@
   --dark-blue: #6499E9;
   --blue: #9EDDFF;
   --cool-blue: #A6F6FF;
-  --white: white;
+  --main-text-color: black;
+  --secondary-text-color: white;
 
   --item-gap-size: 1.25rem;
 }
@@ -25,10 +26,6 @@ ul {
   margin: 0;
 }
 
->*+* {
-  margin-top: var(--item-gap-size);
-}
-
 * {
-  color: var(--white)
+  color: var(--main-text-color)
 }

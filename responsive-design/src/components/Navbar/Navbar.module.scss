@@ -5,8 +5,13 @@
     gap: var(--item-gap-size);
     flex-wrap: wrap;
 
+    li {
+        color: var(--secondary-text-color);
+    }
+
     .brandName {
         color: var(--dark-blue);
         margin-left: auto;
     }
+
 }
