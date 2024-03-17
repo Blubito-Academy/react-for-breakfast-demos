@@ -31,7 +31,7 @@ export const ProductSection = () => {
       <Product
         productName="A lobotomized owl"
         productImgSrc="./public/owl.png"
-        productDesc="What horros has this own seen? Mayhaps my CSS stylesheets?"
+        productDesc="What horros has this owl witnessed? Mayhaps my CSS stylesheets?"
       />
     </div>
   );
