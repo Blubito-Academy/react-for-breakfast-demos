@@ -3,6 +3,7 @@
     h1,
     h2 {
         text-align: center;
+        word-break: break-all;
     }
 
     h1 {
@@ -16,5 +17,6 @@
     p {
         max-width: 980px;
         margin: auto;
+        padding: 1rem;
     }
 }

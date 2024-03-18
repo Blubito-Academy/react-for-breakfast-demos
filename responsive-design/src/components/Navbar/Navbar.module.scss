@@ -4,6 +4,7 @@
     display: flex;
     gap: var(--item-gap-size);
     flex-wrap: wrap;
+    word-break: break-all;
 
     li {
         color: var(--secondary-text-color);
