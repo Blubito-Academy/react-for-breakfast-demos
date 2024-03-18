@@ -4,7 +4,7 @@ export const MainSection = () => {
     <section className={styles.mainSection}>
       <h1>Responsive is hard</h1>
       <h2>Is it though?</h2>
-      <div className={styles.imgSection}><img src="./public/cat.jpg" alt="Responsive cat meme"></img></div>
+      <div className={styles.imgSection}><img src="/cat.jpg" alt="Responsive cat meme"></img></div>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
