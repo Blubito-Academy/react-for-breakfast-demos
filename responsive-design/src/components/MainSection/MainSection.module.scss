@@ -10,23 +10,11 @@
     }
 
     img {
-        display: block;
-        max-width: 100%;
         margin-inline: auto; // writing mode dependant!!!
     }
 
     p {
         max-width: 980px;
         margin: auto;
-    }
-
-    @media screen and (max-width: 350px) {
-        h1 {
-            font-size: 1.5rem;
-        }
-
-        h2 {
-            font-size: 1rem;
-        }
     }
 }
