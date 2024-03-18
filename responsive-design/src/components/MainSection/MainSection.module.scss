@@ -9,8 +9,13 @@
         font-size: 3rem;
     }
 
-    img {
-        margin-inline: auto; // writing mode dependant!!!
+    .imgSection {
+        padding: 1rem;
+
+        img {
+            margin-inline: auto; // writing mode dependant!!!
+        }
+
     }
 
     p {
