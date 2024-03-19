@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+# Responsive design
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Key discussion points: 
+- Responsive images and fonts
+- Media queries
+- Responsive flex and grid layouts
+- Testing our layout 
 
-Currently, two official plugins are available:
+## Tipps :
+- Avoid fixed sizes (like heights/widths of containers) 
+- If we need to have some form of a fixed size -> use min-/max- properties
+- Let the browser do most of the work
+- Utilize relative units (such as rem and em)
+- Don't abuse media queries
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Sources : 
+- https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design#responsive_imagesmedia
+- https://www.youtube.com/watch?v=x4u1yp3Msao&ab_channel=KevinPowell
+- https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
