@@ -1,0 +1,59 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+
+  --dark-blue: #6499E9;
+  --blue: #9EDDFF;
+  --cool-blue: #A6F6FF;
+  --main-text-color: black;
+  --secondary-text-color: white;
+
+  --item-gap-size: 1.25rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+body {
+  margin: 0
+}
+
+h1,
+h2,
+h3 {
+  word-break: break-word;
+}
+
+body {
+  padding-bottom: 2rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  color: var(--main-text-color)
+}
+
+@media screen and (max-width: 350px) {
+  :root {
+    font-size: 12px;
+  }
+}

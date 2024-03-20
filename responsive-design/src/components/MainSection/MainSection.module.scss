@@ -1,0 +1,26 @@
+.mainSection {
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .imgSection {
+        padding: 1rem;
+
+        img {
+            margin-inline: auto; // writing mode dependant!!!
+        }
+
+    }
+
+    p {
+        max-width: 980px;
+        margin: auto;
+        padding: 1rem;
+    }
+}
