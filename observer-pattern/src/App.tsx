@@ -15,9 +15,7 @@ function App() {
     const loggedInfo: JSX.Element = (
       <div key={dataToDisplay}>{dataToDisplay}</div>
     );
-    const newChangeTriggers = [...changeTriggers];
-    newChangeTriggers.push(loggedInfo);
-    setChangeTriggers(newChangeTriggers);
+    setChangeTriggers((prevState) => [...prevState, loggedInfo]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -41,7 +39,6 @@ function App() {
 
   useEffect(() => {
     if (!useEffectRef.current) {
-      console.log("trigger");
       observableObject.subscribe(triggerAlertObserver);
       observableObject.subscribe(triggerLoggerObserver);
       useEffectRef.current = true;
