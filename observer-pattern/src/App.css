@@ -4,3 +4,33 @@
   padding: 2rem;
   text-align: center;
 }
+
+.observerShowCase {
+  align-items: center;
+}
+
+.observerShowCase > * {
+  margin-bottom: 1rem;
+}
+
+.eventsContainer {
+  height: 50px;
+  align-content: center;
+}
+
+.eventsContainer > input {
+  width: 200px;
+  margin-right: 1rem;
+}
+
+.eventsContainer > button {
+  height: auto;
+}
+
+.observerShowCase > code {
+  display: block;
+  width: 100%;
+  height: 400px;
+  background-color: whitesmoke;
+  overflow: auto;
+}
