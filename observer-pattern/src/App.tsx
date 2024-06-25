@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { observableObject } from "./ObservableClass";
 import { Toaster, toast } from "react-hot-toast";
+import nextId from "react-id-generator";
 import "./App.css";
 
 function App() {
@@ -12,9 +13,7 @@ function App() {
   }, []);
 
   const triggerLoggerObserver = useCallback((dataToDisplay: string) => {
-    const loggedInfo: JSX.Element = (
-      <div key={dataToDisplay}>{dataToDisplay}</div>
-    );
+    const loggedInfo: JSX.Element = <div key={nextId()}>{dataToDisplay}</div>;
     setChangeTriggers((prevState) => [...prevState, loggedInfo]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
