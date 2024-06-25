@@ -10,10 +10,10 @@ class Observable {
   }
 
   public unsubscribe(observerToRemove: { (dataToDisplay: string): void }) {
-    console.log(observerToRemove);
-    this.observers = this.observers.filter(
+    const updatedObservers = this.observers.filter(
       (observer) => observer !== observerToRemove
     );
+    this.observers = updatedObservers;
   }
 
   public notifyObservers(dataToDisplay: string) {

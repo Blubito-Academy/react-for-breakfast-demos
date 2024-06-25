@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { observableObject } from "./ObservableClass";
 import { Toaster, toast } from "react-hot-toast";
 import "./App.css";
@@ -7,18 +7,19 @@ function App() {
   const [changeTriggers, setChangeTriggers] = useState<JSX.Element[]>([]);
   const useEffectRef = useRef<boolean>(false);
 
-  const triggerAlertObserver = (dataToDisplay: string) => {
+  const triggerAlertObserver = useCallback((dataToDisplay: string) => {
     toast.success(dataToDisplay);
-  };
+  }, []);
 
-  const triggerLoggerObserver = (dataToDisplay: string) => {
+  const triggerLoggerObserver = useCallback((dataToDisplay: string) => {
     const loggedInfo: JSX.Element = (
       <div key={dataToDisplay}>{dataToDisplay}</div>
     );
     const newChangeTriggers = [...changeTriggers];
     newChangeTriggers.push(loggedInfo);
     setChangeTriggers(newChangeTriggers);
-  };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const handleBtnClick = () => {
     observableObject.notifyObservers("The button was clicked!");
@@ -40,6 +41,7 @@ function App() {
 
   useEffect(() => {
     if (!useEffectRef.current) {
+      console.log("trigger");
       observableObject.subscribe(triggerAlertObserver);
       observableObject.subscribe(triggerLoggerObserver);
       useEffectRef.current = true;
